@@ -18,7 +18,8 @@ class Module implements ConfigProviderInterface, BootstrapListenerInterface
     /**
      * Return default zend-serializer configuration for zend-mvc applications.
      */
-    public function getConfig() {
+    public function getConfig()
+    {
         return include __DIR__ . '/../config/module.config.php';
     }
 
@@ -28,8 +29,8 @@ class Module implements ConfigProviderInterface, BootstrapListenerInterface
      * @param \Zend\Mvc\MvcEvent|EventInterface $e
      * @return void
      */
-    public function onBootstrap(EventInterface $e) {
-
+    public function onBootstrap(EventInterface $e)
+    {
         dd('im here');
     }
 
